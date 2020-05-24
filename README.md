@@ -1,6 +1,7 @@
 # forcabarca
 
 A new Flutter application.
+Although the data is old (2017), for reference use  : https://github.com/HarshilChokshi/FC-Barcelona-API
 
 ## Getting Started
 
