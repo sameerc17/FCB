@@ -44,7 +44,7 @@ class _ClubState extends State<Club> {
                                 TextStyle(color: Colors.black, fontSize: 20.0)),
                         Image(
                           image: NetworkImage(s4),
-                          fit: BoxFit.fitWidth,
+//                          fit: BoxFit.fitWidth,
                           height: 250.0,
                         ),
                         Text('$s2',

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'views/matches.dart';
 import 'views/club.dart';
 import 'views/players.dart';
-import 'views/ucl.dart';
+
 
 class Home extends StatefulWidget {
   @override
@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
                 height: 10.0,
               ),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   print('Clicked');
                   Navigator.push(
                     context,
@@ -90,33 +90,12 @@ class _HomeState extends State<Home> {
               SizedBox(
                 height: 10.0,
               ),
-              Wrap(
-                children: <Widget>[
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
-                      color: Colors.black,
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Text(
-                        'Recent La Liga results',
-                        style: TextStyle(color: Colors.white, fontSize: 20.0),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
               GestureDetector(
-                onTap: (){
-                  print('Clicked');
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => UCL(),
+                      builder: (context) => Matches(),
                     ),
                   );
                 },
@@ -130,36 +109,13 @@ class _HomeState extends State<Home> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
-                          'Recent UEFA Champions League results',
+                          'Recent match results',
                           style: TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
                       ),
                     ),
                   ],
                 ),
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Wrap(
-                children: <Widget>[
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
-                      color: Colors.black,
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Text(
-                        'Recent Copa Del Rey results',
-                        style: TextStyle(color: Colors.white, fontSize: 20.0),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 10.0,
               ),
             ],
           ),
