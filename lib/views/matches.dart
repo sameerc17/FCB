@@ -15,7 +15,6 @@ int b = 0, o = 0;
 List<Matchmodel> list = [];
 
 class _MatchesState extends State<Matches> {
-
   @override
   void initState() {
     super.initState();
@@ -128,17 +127,23 @@ class Tiler extends StatelessWidget {
               getTitle(title),
               style: TextStyle(fontSize: 17.0, color: Colors.white),
             ),
-            SizedBox(height: 10.0,),
+            SizedBox(
+              height: 10.0,
+            ),
             Text(
               getComp(competition),
               style: TextStyle(fontSize: 20.0, color: Colors.white),
             ),
-            SizedBox(height: 10.0,),
+            SizedBox(
+              height: 10.0,
+            ),
             Text(
               "Date: " + date,
               style: TextStyle(fontSize: 20.0, color: Colors.white),
             ),
-            SizedBox(height: 10.0,),
+            SizedBox(
+              height: 10.0,
+            ),
             Text(
               "Score: " +
                   barcelonaGoals.toString() +
@@ -152,14 +157,12 @@ class Tiler extends StatelessWidget {
     );
   }
 
-  String getComp(String c){
-    if(c=="uefa-champions-league")
-      return "Uefa Champions League";
+  String getComp(String c) {
+    if (c == "uefa-champions-league") return "Uefa Champions League";
     return "La Liga";
   }
 
-  String getTitle(String t){
+  String getTitle(String t) {
     return t;
   }
-
 }

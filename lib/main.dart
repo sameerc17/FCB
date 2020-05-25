@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-        seconds: 5,
+        seconds: 3,
         navigateAfterSeconds: Home(),
         title: Text(
           'FC Barcelona App',

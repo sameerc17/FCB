@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           'About the club',
-                          style: TextStyle(color: Colors.white, fontSize: 20.0),
+                          style: TextStyle(color: Colors.white, fontSize: 30.0),
                         ),
                       ),
                     ),
@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(
-                height: 10.0,
+                height: 30.0,
               ),
               GestureDetector(
                 onTap: () {
@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           'About the players',
-                          style: TextStyle(color: Colors.white, fontSize: 20.0),
+                          style: TextStyle(color: Colors.white, fontSize: 30.0),
                         ),
                       ),
                     ),
@@ -88,7 +88,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(
-                height: 10.0,
+                height: 30.0,
               ),
               GestureDetector(
                 onTap: () {
@@ -110,7 +110,7 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           'Recent match results',
-                          style: TextStyle(color: Colors.white, fontSize: 20.0),
+                          style: TextStyle(color: Colors.white, fontSize: 30.0),
                         ),
                       ),
                     ),
